@@ -23,14 +23,15 @@ let arr2: NumberArray = [
   1, 2, 3, 4, 5
 ];
 
-
+// 可以通过 readonly 将索引签名设置为只读，这样就防止了给索引赋值：
 interface StringString {
-  [index: string]: any
+  readonly [index: string]: string
 }
 
-let obj: StringString = {
-  name: 'lx',
-  year: 26
+let arr3: StringString = {
+  'a': 'stringText',
+  'b': 'stringText',
+  'c': 'stringText',
 };
 
-// todo ending……
+

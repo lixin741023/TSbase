@@ -6,6 +6,7 @@
 // 它就像是一个只有 参数列表 和 返回值类型 的函数定义。
 // 参数列表里的每个参数都需要指定 名字 和 类型。
 
+// 例1：
 interface SomeFunc {
   (paramsA: string, paramsB: number): number
 }
@@ -20,3 +21,15 @@ f1 = function (a, b) {
 // 函数的 参数名 不需要和 接口中定义的名字匹配，
 // <|但是，
 // 位置需要相互对应哦！
+
+
+// 例2：
+interface objFunc {
+  active: (paramsA: string, paramsB: string) => number
+}
+
+let obj: objFunc = {
+  active: (a, b) => 1
+};
+
+

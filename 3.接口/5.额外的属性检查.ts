@@ -1,4 +1,4 @@
-// 请看例子：
+// 先来看例子：
 
 interface Params {
   name: string,
@@ -68,4 +68,4 @@ f2({name: 'lx', year: 25, active: 'just do'});
 
 
 
-// todo 字面量？的定义？概念？？
+// todo 字面量？的定义？概念？ 字面量直观？？

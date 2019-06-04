@@ -8,10 +8,12 @@ var Student = /** @class */ (function () {
         this.level = level;
     }
     Student.prototype.say = function () {
+        console.log(this);
         Student.active();
         console.log(Student.x);
     };
     Student.active = function () {
+        console.log(this);
         console.log('do someThing……');
     };
     Student.x = 'xxx';
@@ -20,3 +22,6 @@ var Student = /** @class */ (function () {
 var me = new Student('lx', '3');
 // Student{name: 'lx', level: '3'}
 me.say();
+// 类的静态成员 无法被实例使用，
+// 类的静态成员 可以被派生类使用，
+// 类的静态方法 中的this指向的是类本身，而不是类的实例。

@@ -16,7 +16,7 @@ class Student implements StudentRules {
 
   static active = function () {
     console.log('do someThing……');
-  }
+  };
 
   static x = 'xxx';
 

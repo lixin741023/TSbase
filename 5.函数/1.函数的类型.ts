@@ -1,10 +1,10 @@
-// 函数的类型分为：
+// 函数的类型由2部分组成：
 
 // <|参数类型
 // <|返回值类型
 
 
-function fun(x: number, y: number): number {
+function fun(x: number, y: number) {
   return x + y
 }
 // <|
@@ -29,5 +29,5 @@ let someFun2: (paramsA: number, paramsB: number) => void = (x, y) => x + y;
 
 
 
-// 函数的类型只是由参数类型和返回值组成的。 函数中使用的捕获变量不会体现在类型里。
+// 函数的类型只是由 参数类型 和 返回值 组成的。 函数中使用的捕获变量不会体现在类型里。
 // 实际上，这些变量是函数的隐藏状态并不是组成API的一部分。

@@ -21,5 +21,5 @@ let arr: ReadonlyArray<string> = [
 
 // 区分什么时候用 const ？什么时候用 readonly ？
 // |>
-// 变量 const
-// 属性 readonly
+// 想要创建1个只读的 变量，就用 const；
+// 想要创建1个只读的 属性，就用 readonly；

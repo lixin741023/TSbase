@@ -15,7 +15,9 @@ class Student implements StudentRules {
 }
 
 // 我们创建了1个 Student 类，
-// 这个类有 2个 成员，
+// 这个类有 4个 成员，
 // <|
-// 1个 inSchool 属性
-// 1个 构造函数
+// 1个构造函数
+// 1个 name 成员
+// 1个 level 成员
+// 1个 inSchool 成员

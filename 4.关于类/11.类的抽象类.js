@@ -45,8 +45,12 @@ var Student = /** @class */ (function (_super) {
     };
     return Student;
 }(StudentMock));
-var me;
+var me; // #2-1
 me = new Student('lx');
-me.say();
-me["do"]();
-me.active();
+// @ts-ignore
+me["do"](); // #2-2
+// #1-1 抽象类中定通过 abstract 定义来1个抽象方法，
+// #1-2 那么在派生类中，就必须实现该方法！
+// <|否则会有报错。
+// #2-1 创建一个对抽象类型的引用，
+// #2-2 方法在声明的抽象类中不存在，调用的话会报错。

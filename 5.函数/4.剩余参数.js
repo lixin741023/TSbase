@@ -10,10 +10,16 @@ function f3(firstName) {
     }
     console.log(lastName);
 }
-f3('1', 'a', 'b', 'c');
+f3('1', 'a', 'b', 'c'); // ['a', 'b', 'c']
+f3('1'); // []
+f3('1', undefined); // [undefined]
+f3('1', null); // [null]
+// <|
 // <|剩余参数 只能位于末尾哦！
 // <|剩余参数 只能是数组类型！
 // <|剩余参数 会被当作个数不限的可选参数，可以1个也不传，也可以传很多。
-f3('1');
-f3('1', undefined);
-f3('1', null);
+// <|1个也不传的时候，他是一个空数组。
+// 这个省略号也会在带有剩余参数的 函数类型 定义上使用到：
+var fun = function (x, y) { console.log(y); };
+var funC = f3;
+fun('1', 2, 3);

@@ -14,5 +14,5 @@ let ZZZ: StudentRules = {
   name: 'lx',
   level: '3',
   inSchool: false
-}
+};
 

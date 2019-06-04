@@ -24,6 +24,7 @@ f3('1', null); // [null]
 // <|1个也不传的时候，他是一个空数组。
 
 // 这个省略号也会在带有剩余参数的 函数类型 定义上使用到：
-let fun: (paramA: string, ...params: any[]) => void = (x, y) => {};
+let fun: (paramA: string, ...params: any[]) => void = (x, y) => {console.log(y)};
 let funC: (paramA: string, ...params: any[]) => void = f3;
+
 

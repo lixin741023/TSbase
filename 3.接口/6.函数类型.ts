@@ -31,5 +31,3 @@ interface objFunc {
 let obj: objFunc = {
   active: (a, b) => 1
 };
-
-
